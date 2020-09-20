@@ -1,0 +1,13 @@
+.currentWeatherContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5vh 0 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  .currentWeatherContainer {
+    flex-direction: column;
+    margin: 2vh 0 0 0;
+  }
+}

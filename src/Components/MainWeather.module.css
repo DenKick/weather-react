@@ -3,6 +3,9 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  padding-right: 2em;
+  border-right: 3px solid #435dc3;
+  padding-bottom: 15px;
 }
 
 .mainWeatherContainer > div {
@@ -25,4 +28,23 @@
 
 .dataWeather {
   font-size: 1.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .mainWeatherContainer {
+    border-right: none;
+    padding: 0 0 1em 0;
+  }
+
+  .mainWeatherIcon {
+    font-size: 5em;
+  }
+
+  .dataTemperature {
+    font-size: 3.5em;
+  }
+  
+  .dataWeather {
+    font-size: 1em;
+  }
 }
