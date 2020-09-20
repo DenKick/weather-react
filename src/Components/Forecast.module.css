@@ -1,0 +1,26 @@
+.forecastContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  gap: 5vh;
+  justify-content: center;
+  padding: 0 15%;
+}
+
+@media screen and (max-width: 950px) {
+  .forecastContainer {
+    grid-template-columns: repeat(3, 120px);
+    gap: 3vh;
+    padding: 0;
+  }
+
+  .forecastContainer > div {
+    margin: 0 0 0.5em 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .forecastContainer {
+    grid-template-columns: repeat(2, 120px);
+    gap: 2vh;
+  }
+}

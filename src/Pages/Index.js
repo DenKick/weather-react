@@ -3,6 +3,7 @@ import CurrentWeather from '../Components/CurrentWeather';
 import styles from './Index.module.css';
 
 import City from '../Components/City';
+import Forecast from '../Components/Forecast';
 
 export default class Index extends Component {
   constructor(props) {
@@ -33,6 +34,7 @@ export default class Index extends Component {
         <div className = {styles.container}>
           <City city = {city} region = {region} />
           <CurrentWeather mainWeather = {mainWeather} detailedWeather = {detailedWeather} />
+          <Forecast />
         </div>
       </>
     )

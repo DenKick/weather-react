@@ -1,0 +1,19 @@
+.cardContainer {
+  background-color: #1b45a1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 120px;
+  font-size: 3em;
+}
+
+.day {
+  font-size: 0.5em;
+  margin: 0.5em 0;
+}
+
+.temp {
+  font-size: 0.5em;
+  margin: 0.5em 0;
+}
