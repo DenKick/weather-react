@@ -1,0 +1,30 @@
+.cityContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+}
+
+.cityName {
+  font-size: 3em;
+}
+
+.dateString {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 800px) {
+  .cityContainer {
+    padding: 0;
+    text-align: center;
+  }
+
+  .cityName {
+    font-size: 1.5em;
+  }
+  
+  .dateString {
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+}

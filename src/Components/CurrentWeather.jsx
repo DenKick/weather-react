@@ -4,11 +4,31 @@ import DetailedWeather from './DetailedWeather';
 import styles from './CurrentWeather.module.css';
 
 export default class CurrentWeather extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mainWeather: this.props.mainWeather,
+      detailedWeather: this.props.detailedWeather
+    }
+  }
+
   render() {
+    const {icon, temp, weather} = this.state.mainWeather;
+    const {highTemp, lowTemp, wind, rain, sunrise, sunset} = this.state.detailedWeather;
+
     return (
       <div className = {styles.currentWeatherContainer}>
-        <MainWeather icon = "wi wi-day-sunny" temperature = "21" weather = "Mostly Sunny" />
-        <DetailedWeather highTemp = "25" lowTemp = "11" wind = "7 mph" rain = "0%" sunrise = "05.27" sunset = "20.57" />
+        <MainWeather icon = {icon}
+                     temperature = {temp}
+                     weather = {weather}
+        />
+        <DetailedWeather highTemp = {highTemp}
+                         lowTemp = {lowTemp}
+                         wind = {wind}
+                         rain = {rain}
+                         sunrise = {sunrise}
+                         sunset = {sunset}
+        />
       </div>
     )
   }
