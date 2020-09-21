@@ -24,7 +24,7 @@ export default class CurrentWeather extends Component {
         />
         <DetailedWeather appTemp = {appTemp + '°'}
                          clouds = {clouds + '%'}
-                         windSpd = {windSpd + ' m/s'}
+                         windSpd = {Math.floor(windSpd) + ' m/s'}
                          pressure = {Math.floor(pressure) + ' mb'}
                          sunrise = {sunrise}
                          sunset = {sunset}
