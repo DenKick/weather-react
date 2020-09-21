@@ -71,7 +71,7 @@ export default class Index extends Component {
     const {city, region, mainWeather, detailedWeather, isLoaded, error} = this.state;
 
     if (!isLoaded) {
-      return <div>Loading</div>
+      return <div className = {styles.loadingContainer}>Loading</div>
     } else if (error) {
       return <div>Error</div>
     } else {

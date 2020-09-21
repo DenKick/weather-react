@@ -3,6 +3,15 @@
   height: 90vh;
 }
 
+.loadingContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+}
+
 @media screen and (max-width: 900px) {
   .container {
     padding: 1em 0;
