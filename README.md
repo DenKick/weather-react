@@ -12,7 +12,6 @@ App is full adaptive and looks good on tablets and smartphones.
 
 ## Smartphone version
 
-![Smartphone version](https://raw.githubusercontent.com/DenKick/weather-react/master/Smartphone.png "Smartphone")
 
 ## What I used
 
