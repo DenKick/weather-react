@@ -6,27 +6,27 @@ export default class DetailedWeather extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      highTemp: this.props.highTemp,
-      lowTemp: this.props.lowTemp,
-      wind: this.props.wind,
-      rain: this.props.rain,
+      appTemp: this.props.appTemp,
+      clouds: this.props.clouds,
+      windSpd: this.props.windSpd,
+      pressure: this.props.pressure,
       sunrise: this.props.sunrise,
       sunset: this.props.sunset
     }
   }
   
   render() {
-    const { highTemp, lowTemp, wind, rain, sunrise, sunset } = this.state;
+    const { appTemp, clouds, windSpd, pressure, sunrise, sunset } = this.state;
 
     return (
       <div className = {styles.detailsContainer}>
         <div className = {styles.detailsContainerColumn}>
-          <Details value= {highTemp} units = "High" />
-          <Details value= {lowTemp} units = "Low" />
+          <Details value= {appTemp} units = "Feels Like" />
+          <Details value= {clouds} units = "Clouds" />
         </div>
         <div className = {styles.detailsContainerColumn}>
-          <Details value= {wind} units = "Wind" />
-          <Details value= {rain} units = "Rain" />
+          <Details value= {windSpd} units = "Wind" />
+          <Details value= {pressure} units = "Pressure" />
         </div>
         <div className = {styles.detailsContainerColumn}>
           <Details value= {sunrise} units = "Sunrise" />

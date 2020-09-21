@@ -6,6 +6,13 @@
   padding: 0 15%;
 }
 
+.forecastLoadingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto 0;
+}
+
 @media screen and (max-width: 950px) {
   .forecastContainer {
     grid-template-columns: repeat(3, 120px);

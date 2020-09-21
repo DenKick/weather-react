@@ -46,7 +46,7 @@ export default class Forecast extends Component {
     const { isLoaded, error, items } = this.state;
 
     if (!isLoaded) {
-      return <div>Loading</div>
+      return <div className = {styles.forecastLoadingContainer}>Loading</div>
     } else if (error) {
       return <div>Error</div>
     } else {

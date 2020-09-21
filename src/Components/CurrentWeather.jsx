@@ -14,7 +14,7 @@ export default class CurrentWeather extends Component {
 
   render() {
     const {icon, temp, weather} = this.state.mainWeather;
-    const {highTemp, lowTemp, wind, rain, sunrise, sunset} = this.state.detailedWeather;
+    const {appTemp, clouds, windSpd, pressure, sunrise, sunset} = this.state.detailedWeather;
 
     return (
       <div className = {styles.currentWeatherContainer}>
@@ -22,10 +22,10 @@ export default class CurrentWeather extends Component {
                      temperature = {temp}
                      weather = {weather}
         />
-        <DetailedWeather highTemp = {highTemp}
-                         lowTemp = {lowTemp}
-                         wind = {wind}
-                         rain = {rain}
+        <DetailedWeather appTemp = {appTemp + '°'}
+                         clouds = {clouds + '%'}
+                         windSpd = {windSpd + ' m/s'}
+                         pressure = {Math.floor(pressure) + ' mb'}
                          sunrise = {sunrise}
                          sunset = {sunset}
         />
