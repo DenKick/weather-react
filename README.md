@@ -8,11 +8,11 @@ App is full adaptive and looks good on tablets and smartphones.
 
 ## Tablet version
 
-There will be image
+![Tablet version](https://raw.githubusercontent.com/DenKick/weather-react/master/Tablet.png "Tablet")
 
 ## Smartphone version
 
-There wil be image
+![Smartphone version](https://raw.githubusercontent.com/DenKick/weather-react/master/Smartphone.png "Smartphone")
 
 ## What I used
 
