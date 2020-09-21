@@ -6,6 +6,10 @@ It uses Geolocation API to define location, Weatherbit API to define weather in 
 
 App is full adaptive and looks good on tablets and smartphones.
 
+Todo:
+  1) Make timezone offset
+  2) Refactoring
+
 ## Tablet version
 
 ![Tablet version](https://raw.githubusercontent.com/DenKick/weather-react/master/Tablet.png "Tablet")
