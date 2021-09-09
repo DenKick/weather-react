@@ -37,7 +37,7 @@ export default class Index extends Component {
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
 
-      let apiKey = `3f323ac45ffd4f0d83323fa593986f16`;
+      let apiKey = `8cbbc52d9b3642c18b2347b5ddb7bd4f`;
       let apiCall = `https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=${apiKey}`;
 
       fetch(apiCall)
